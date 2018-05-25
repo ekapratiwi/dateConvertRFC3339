@@ -1,0 +1,19 @@
+<h1 class="h1">
+  Simple Data Converter
+</h1>
+<div class="h1" style="margin-top: 10%">
+  <h3>Input RFC_3339 Formatted Date</h3>
+  <input type="text" class="input" name="date" id="inputdate" #input>
+</div>
+<div style="text-align: center">
+  <button class="convert" (click)="result(input.value)">Convert Date</button>
+</div>
+<div class="h1">
+    <div style="width: 250px; height: 30px; background: red; margin-left: 40%; display: none !important;" id="fieldnull" >
+      <h4 style="color: white; padding: 5px">Field must be filled</h4>
+    </div>
+  <div style="width: 250px; height: 30px; background: red; margin-left: 40%; display: none !important;" id="fieldfalse" >
+    <h4 style="color: white; padding: 5px">wrong format input</h4>
+  </div>
+</div>
+
